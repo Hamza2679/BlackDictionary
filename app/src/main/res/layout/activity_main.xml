@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnShowSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:onClick="showSearch"
+
+        android:text="Search" />
+
+    <ListView
+        android:id="@+id/listWords"
+        android:layout_width="match_parent"
+        android:layout_height="630dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="99dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0"
+
+            android:onClick="showHistory"
+            android:text="History" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/button8"
+            android:layout_weight="0"
+            android:onClick="showFavorite"
+            android:text="Favorite" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="121dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@+id/button9"
+            android:layout_weight="0"
+            android:onClick="showDeveloper"
+            android:text="Developer" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="84dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="-5dp"
+            android:layout_toRightOf="@+id/button10"
+            android:layout_weight="0"
+            android:onClick="showAbout"
+            android:text="About" />
+    </LinearLayout>
+
+</LinearLayout>
